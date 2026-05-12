@@ -1,4 +1,3 @@
-import java.lang.*;
 public class insertsubstring {
     public static String insertstring(String originalstring , String stringtobeinserted,int index){
     String newString= new String();
