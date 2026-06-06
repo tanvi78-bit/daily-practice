@@ -42,7 +42,7 @@ class Developer extends Employee {
     }
 }
 
-public class Company {
+public class MyCompany {
     public static void main(String[] args) {
 
         Manager m1 = new Manager(

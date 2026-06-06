@@ -30,7 +30,7 @@ class details {
     }
 }
 
-public class Person {
+public class female{
     public static void main(String[] args) {
         details p = new details();
 
