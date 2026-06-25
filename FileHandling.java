@@ -3,7 +3,7 @@ import java.io.IOException;
 public class FileHandling{
     public static void main(String[] args) {
         try{
-            File file=new File("C:\\Users\\tanvi\\OneDrive\\Attachments\\java\\sample.txt");
+            File file=new File("C:\\Users\\tanvi\\OneDrive\\Attachments\\java\\Sample.txt");
             if(file.createNewFile()){
                 System.out.println("File created: "+ file.getName());
             }else{
