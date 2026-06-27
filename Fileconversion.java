@@ -2,7 +2,7 @@
 public class Fileconversion {
     public static void main(String[] args) {
         try {
-            // Step 1: Create TXT file
+            //Creating TXT file
             FileWriter txtWriter = new FileWriter("student.txt");
             txtWriter.write("Name Age City\n");
             txtWriter.write("Tanvi 20 Bhopal\n");
@@ -11,7 +11,7 @@ public class Fileconversion {
             txtWriter.close();
             System.out.println("TXT file created successfully.");
 
-            // Step 2: Convert TXT to CSV
+            //Converting TXT to CSV
             BufferedReader br = new BufferedReader(new FileReader("student.txt"));
             FileWriter csvWriter = new FileWriter("student.csv");
 
@@ -25,7 +25,7 @@ public class Fileconversion {
             csvWriter.close();
             System.out.println("CSV file created successfully.");
 
-            // Step 3: Convert CSV to XLS
+            // Converting CSV to XLS
             br = new BufferedReader(new FileReader("student.csv"));
             FileWriter xlsWriter = new FileWriter("student.xls");
 
