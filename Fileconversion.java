@@ -3,7 +3,7 @@ public class Fileconversion {
     public static void main(String[] args) {
         try {
             //Creating TXT file
-            FileWriter txtWriter = new FileWriter("student.txt");
+            FileWriter txtWriter = new FileWriter("C:\\Users\\tanvi\\OneDrive\\Attachments\\java\\student.txt");
             txtWriter.write("Name Age City\n");
             txtWriter.write("Tanvi 20 Bhopal\n");
             txtWriter.write("Rahul 21 Indore\n");
@@ -13,7 +13,7 @@ public class Fileconversion {
 
             //Converting TXT to CSV
             BufferedReader br = new BufferedReader(new FileReader("student.txt"));
-            FileWriter csvWriter = new FileWriter("student.csv");
+            FileWriter csvWriter = new FileWriter("C:\\Users\\tanvi\\OneDrive\\Attachments\\java\\student.csv");
 
             String line;
             while ((line = br.readLine()) != null) {
@@ -27,7 +27,7 @@ public class Fileconversion {
 
             // Converting CSV to XLS
             br = new BufferedReader(new FileReader("student.csv"));
-            FileWriter xlsWriter = new FileWriter("student.xls");
+            FileWriter xlsWriter = new FileWriter("C:\\Users\\tanvi\\OneDrive\\Attachments\\java\\student.xls");
 
             while ((line = br.readLine()) != null) {
                 xlsWriter.write(line.replace(",", "\t"));
