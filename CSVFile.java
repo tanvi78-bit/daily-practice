@@ -4,7 +4,6 @@ public class CSVFile {
     public static void main(String[] args) {
 
         try {
-            // Create CSV file
             FileWriter fw = new FileWriter("data.csv");
             fw.write("Name,Age\n");
             fw.write("Tanvi,20\n");
