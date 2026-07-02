@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 public class Perfectnumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -20,5 +20,24 @@ public class Perfectnumber {
         }
 
         sc.close();
+    }
+}*/
+
+
+public class Perfectnumber{
+    public static void main(String[] args) {
+        int n1=496;
+        int add=0;
+        for(int i=1;i<n1;i++){
+            if(n1%i==0){
+                add=add+i;
+            }
+        }
+        boolean isPerfect=(add==n1);
+        if(isPerfect){
+            System.out.println("is " + n1 + " a perfect number?: " + isPerfect);
+        }else{
+            System.out.println("is " + n1 + " a perfect number?: " + isPerfect);
+        }
     }
 }
