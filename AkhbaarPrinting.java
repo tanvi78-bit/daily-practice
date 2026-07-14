@@ -7,7 +7,11 @@ class PrintingTask extends Thread {
 
     public void run() {
         System.out.println("Printing: " + document);
-    
+     try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
         System.out.println(document + " printed successfully.");
     }
 }
