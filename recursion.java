@@ -1,5 +1,5 @@
 public class recursion {
-    static void fun1(int n){
+    /*static void fun1(int n){
         if(n==0)
             return;
         System.out.println("GFG");
@@ -9,4 +9,15 @@ public class recursion {
         fun1(2);
     }
     
+} */
+static void fun(int n){
+    if(n==0)
+        return;
+    System.out.println(n);
+    fun(n-1);
+    System.out.println(n);
+}
+public static void main(String[] args) {
+    fun(3);
+}
 }
