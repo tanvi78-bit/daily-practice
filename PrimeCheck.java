@@ -3,14 +3,12 @@ import java.util.Scanner;
 public class PrimeCheck {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter a number: ");
+System.out.print("Enter a number: ");
         int n = sc.nextInt();
+ boolean isPrime = true;
 
-        boolean isPrime = true;
-
-        if (n <= 1) {
-            isPrime = false;
+if (n <= 1) {
+        isPrime = false;
         } else {
             for (int i = 2; i <= Math.sqrt(n); i++) {
                 if (n % i == 0) {
@@ -20,7 +18,7 @@ public class PrimeCheck {
             }
         }
 
-        if (isPrime) {
+if (isPrime) {
             System.out.println(n + " is a Prime Number");
         } else {
             System.out.println(n + " is not a Prime Number");
