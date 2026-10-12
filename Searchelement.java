@@ -22,7 +22,7 @@ public class Searchelement {
             arr[i]=sc.nextInt();
         }
         int result=elementSearch(arr,key);
-        System.out.println("Index" + result);
+        System.out.println("Index :" + result);
         sc.close();
 
     }
