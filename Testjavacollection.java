@@ -82,7 +82,7 @@ class Testjavacollection{
         }
     }*/
 
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 class Testjavacollection{
     public static void main(String[] args) {
             ArrayList<Object> arr=new ArrayList<Object>();
@@ -103,5 +103,18 @@ class Testjavacollection{
                 System.out.print(arr.get(i)+" ");
             }
             System.out.println();
+        }
+    }*/
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<String> names =new ArrayList<>(Arrays.asList("abs","gfh","hfgh","ygf","hfhfh"));
+            System.out.println("Original List: " + names);
+            //create sublist from index 1 to 4(4 execluded)
+        List<String>sub=names.subList(1,4);
+        System.out.println("Sub List: "+sub);
         }
     }
