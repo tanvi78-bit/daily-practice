@@ -25,7 +25,7 @@ class Testjavacollection{
         }
     }*/
 
-import java.util.*;
+/*import java.util.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 class Testjavacollection{
@@ -41,5 +41,43 @@ class Testjavacollection{
         ArrayList sec_list=new ArrayList();
         sec_list=(ArrayList)list.clone();
         System.out.println("Second arraylist "+ sec_list);
+        }
+    }*/
+
+    /*import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<String> list=new ArrayList<String>();
+            
+            list.add("Hello");
+            list.add("I");
+            list.add("Tanvi");
+            list.add("Tiwari");
+            list.add("TIT");
+        System.out.println("First array list " + list);
+        ArrayList sec_list=new ArrayList();
+        sec_list=(ArrayList)list.clone();
+        System.out.println("Second arraylist "+ sec_list);
+        }
+    }*/
+
+
+import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<Integer> Arrlist=new ArrayList<Integer>();
+            
+            Arrlist.add(10);
+            Arrlist.add(20);
+            Arrlist.add(30);
+            Arrlist.add(40);
+            Arrlist.add(50);
+        System.out.println("First array list " + Arrlist);
+       Object[] arr=Arrlist.toArray();
+       System.out.println("Elements of Arraylist " + "as Array: "+ Arrays.toString(arr));
         }
     }
