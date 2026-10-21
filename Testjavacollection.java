@@ -106,7 +106,7 @@ class Testjavacollection{
         }
     }*/
 
-import java.util.List;
+/*import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 class Testjavacollection{
@@ -117,4 +117,22 @@ class Testjavacollection{
         List<String>sub=names.subList(1,4);
         System.out.println("Sub List: "+sub);
         }
+    }*/
+ import java.util.*;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<String> al =new ArrayList<String>();
+            al.add("Mango");
+            al.add("Apple");
+            al.add("Banana");
+            al.add("Grapes");
+            //accessing the element
+        System.out.println("Returning Element: "+al.get(1));
+        //changing the element
+        al.set(1,"Dates");
+        for(String fruit:al){
+            //Traversing List
+            System.out.println(fruit);
+        }  
     }
+}
