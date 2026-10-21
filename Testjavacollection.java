@@ -14,7 +14,7 @@ class Testjavacollection{
         }
     }
 }*/
-import java.util.*;
+/*import java.util.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 class Testjavacollection{
@@ -22,5 +22,24 @@ class Testjavacollection{
             ArrayList<Integer> list=new ArrayList<Integer>();
             list.addAll(Arrays.asList(10,20,30,40,50));
         System.out.print(list);
+        }
+    }*/
+
+import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<Integer> list=new ArrayList<Integer>();
+            
+            list.add(10);
+            list.add(20);
+            list.add(30);
+            list.add(40);
+            list.add(50);
+        System.out.println("First array list " + list);
+        ArrayList sec_list=new ArrayList();
+        sec_list=(ArrayList)list.clone();
+        System.out.println("Second arraylist "+ sec_list);
         }
     }
