@@ -154,7 +154,7 @@ class Testjavacollection{
     }
 }*/
 
-/*import java.util.List;
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 class Testjavacollection{
@@ -168,12 +168,12 @@ class Testjavacollection{
             List<Integer>numbers=Arrays.asList(10,50);
             list.removeAll(numbers);
             System.out.println("After remove all() : "+ list);
-        //clear all
+        //3.clear all() method
         list.clear();
         System.out.println("After clear(): "+ list);
-        System.out.println("Is list empty?:"+ listis)
+        System.out.println("Is list empty?:"+ list);
         }
-    }*/
+    }
 
 
     /*import java.util.*;
@@ -192,7 +192,7 @@ class Testjavacollection{
         }
     }*/
 
-       import java.util.*;
+       /*import java.util.*;
 
 public class Testjavacollection {
     public static void main(String[] args) {
@@ -209,5 +209,5 @@ public class Testjavacollection {
             System.out.println(i);
         }
     }
-}
+}*/
 
