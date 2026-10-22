@@ -118,7 +118,7 @@ class Testjavacollection{
         System.out.println("Sub List: "+sub);
         }
     }*/
- import java.util.*;
+ /*import java.util.*;
 class Testjavacollection{
     public static void main(String[] args) {
             ArrayList<String> al =new ArrayList<String>();
@@ -135,4 +135,79 @@ class Testjavacollection{
             System.out.println(fruit);
         }  
     }
+}*/
+
+/*import java.util.*;
+class Testjavacollection{
+    public static void main(String[] args) {
+        //Creating a list
+        List<String> list1=new ArrayList<String>();
+        list1.add("Mango");  list1.add("Apple");  list1.add("Banana");  list1.add("Grapes");  list1.add("Guava"); 
+        //sorting the list
+        Collections.sort(list1);
+        //Traversing the list
+        for(String Fruit: list1){
+            System.out.println(Fruit);
+        }
+            List<Integer> list2 =new Ar
+
+    }
+}*/
+
+/*import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<Integer> list =new ArrayList<>(Arrays.asList(10,20,30,40,50));
+            System.out.println("Original List: " + list);
+            //1.remove() method
+            list.remove(Integer.valueOf(30));
+            System.out.println("After remove(): " + list);
+            // 2. remove All
+            List<Integer>numbers=Arrays.asList(10,50);
+            list.removeAll(numbers);
+            System.out.println("After remove all() : "+ list);
+        //clear all
+        list.clear();
+        System.out.println("After clear(): "+ list);
+        System.out.println("Is list empty?:"+ listis)
+        }
+    }*/
+
+
+    /*import java.util.*;
+    public class Testjavacollection{
+        public static void main(String[] args) {
+            ArrayList<Integer>Numbers=new ArrayList<Integer>();
+            Numbers.add(23);
+            Numbers.add(32);
+            Numbers.add(45);
+            Numbers.add(63);
+            Numbers.removeIf(n -> (n%3==0));
+            for(int i : Numbers){
+                System.out.println(i);
+            }
+ 
+        }
+    }*/
+
+       import java.util.*;
+
+public class Testjavacollection {
+    public static void main(String[] args) {
+        ArrayList<String> Names = new ArrayList<String>();
+
+        Names.add("Tanvi");
+        Names.add("Sneha");
+        Names.add("Swati");
+        Names.add("Nikki");
+
+        Names.removeIf(name -> name.startsWith("S"));
+
+        for (String i : Names) {
+            System.out.println(i);
+        }
+    }
 }
+
