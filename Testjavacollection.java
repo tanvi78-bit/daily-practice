@@ -149,12 +149,13 @@ class Testjavacollection{
         for(String Fruit: list1){
             System.out.println(Fruit);
         }
-            List<Integer> list2 =new Ar
+            List<Integer> list2 =new ArrayList<Integer>();
+            list2.add(20); list2.
 
     }
 }*/
 
-import java.util.List;
+/*import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 class Testjavacollection{
@@ -173,7 +174,7 @@ class Testjavacollection{
         System.out.println("After clear(): "+ list);
         System.out.println("Is list empty?:"+ list);
         }
-    }
+    }*/
 
 
     /*import java.util.*;
@@ -211,3 +212,53 @@ public class Testjavacollection {
     }
 }*/
 
+
+/*import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<String> list =new ArrayList<>(Arrays.asList("A","B","C","B","D"));
+            System.out.println("Last Index will be: " + list.lastIndexOf("B"));
+    }
+}*/
+
+/*import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<String> list =new ArrayList<>(Arrays.asList("Java","Python","C++"));
+            ArrayList<String> list1 =new ArrayList<>(Arrays.asList("Java","C"));
+            System.out.println("Last Index will be: " + list.lastIndexOf("B"));
+    }*/
+   /*import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<Integer> list =new ArrayList<>(Arrays.asList(10,20,30,40));
+            ArrayList<Integer> list2 =new ArrayList<>(Arrays.asList(20,30));
+            System.out.println(list.containsAll(list2));
+    }}*/
+     /* import java.util.ArrayList;
+class Testjavacollection{
+    public static void main(String[] args) {
+        ArrayList<Integer> list=new ArrayList<>(20);
+        list.add(10);
+        list.add(20);
+        list.trimToSize();
+        System.out.println(list);
+    }}*/
+   import java.util.ArrayList;
+import java.util.Arrays;
+class Testjavacollection{
+    public static void main(String[] args) {
+            ArrayList<String> Course =new ArrayList<String>();
+            Course.add("Java");
+            Course.add("python");
+            Course.addAll(Arrays.asList("Salesforce","SAP"));
+            System.out.println("Courses are: "+Course);
+            Course.remove(String.valueOf("python"));
+            System.out.println("After remove(): " + Course);
+System.out.println(Course.containsAll(
+    Arrays.asList("Java", "SAP")));
+    Course.forEach(hello -> System.out.println(hello));
+    }}
