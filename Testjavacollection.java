@@ -247,7 +247,7 @@ class Testjavacollection{
         list.trimToSize();
         System.out.println(list);
     }}*/
-   import java.util.ArrayList;
+  /*  import java.util.ArrayList;
 import java.util.Arrays;
 class Testjavacollection{
     public static void main(String[] args) {
@@ -261,4 +261,31 @@ class Testjavacollection{
 System.out.println(Course.containsAll(
     Arrays.asList("Java", "SAP")));
     Course.forEach(hello -> System.out.println(hello));
-    }}
+    }}*/
+
+    
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Testjavacollection {
+    public static void main(String[] args) {
+
+        ArrayList<Double> salary = new ArrayList<>();
+        salary.add(25000.0);
+        salary.add(35000.0);
+        salary.add(-5000.0);
+        salary.add(45000.0);
+        salary.add(0.0);
+        salary.add(30000.0);
+
+        System.out.println("Original Salaries: " + salary);
+        salary.removeIf(hello -> hello <= 0);
+
+        System.out.println("After removing invalid salaries: " + salary);
+        salary.replaceAll(hello -> hello * 1.10);
+        System.out.println("After 10% increment: " + salary);
+        salary.sort(Collections.reverseOrder());
+
+        System.out.println("Descending Order: " + salary);
+    }
+}
