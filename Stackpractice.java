@@ -18,7 +18,7 @@ public class Stackpractice {
     }*/
 
 //Balanced Parentheses check using stack 
-import java.util.*;
+/*import java.util.*;
 public class Stackpractice {
     public static void main(String[] args) {
         String expression="(a+b)*{c-d}";
@@ -52,6 +52,29 @@ public class Stackpractice {
         }
 
     }
-}
+}*/
 
+import java.util.*;
+public class Stackpractice {
+    public static void main(String[] args) {
+        String expression="23*54*+9-";
+        Stack<Integer> stack=new Stack<>();
+        for(int i=0;i<expression.length();i++){
+            char ch=expression.charAt(i);
+            if(Character.isDigit(ch)){
+                stack.push(ch-'0');
+            }else{
+                int b=stack.pop();
+                int a=stack.pop();
+               switch(ch){
+                case '+':stack.push(a+b);break;
+                case '-':stack.push(a-b);break;
+                case '*':stack.push(a*b);break;
+                case '/':stack.push(a/b);break;
+
+               }
+            }
+        }
+        System.out.println("Output: "+stack.pop());
+    }}
 
