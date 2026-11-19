@@ -54,7 +54,7 @@ public class Stackpractice {
     }
 }*/
 
-import java.util.*;
+/*import java.util.*;
 public class Stackpractice {
     public static void main(String[] args) {
         String expression="23*54*+9-";
@@ -77,4 +77,4 @@ public class Stackpractice {
         }
         System.out.println("Output: "+stack.pop());
     }}
-
+*/
